@@ -1,0 +1,147 @@
+
+//Códigos separados por linhas de "#" para melhor visualização
+
+//Atividade 1
+
+import java.util.Scanner;
+
+public class Atividade1 {
+    public static void main(String[] args) {
+
+        //Coleta de dados
+        Scanner soma = new Scanner(System.in);
+        System.out.println("Digite 4 números inteiros para somar, separados por ENTER:");
+
+        float n1 = soma.nextFloat(), n2 = soma.nextFloat(), n3 = soma.nextFloat(), n4 = soma.nextFloat();
+
+        //Calculo
+        float resultado = n1 + n2 + n3 + n4;
+
+        //Resultado
+        System.out.println("Soma igual a: %.2f" + resultado);
+    }
+}
+
+
+##################################################################################################################
+
+//Atividade 2
+
+import java.util.Scanner;
+
+public class Atividade2 {
+    public static void main(String[] args) {
+
+        //Coleta de dados
+        Scanner ma = new Scanner(System.in);
+        System.out.println("Digite 3 notas separadas por ENTER para calcular a média aritmética:");
+
+        float n1 = ma.nextFloat(), n2 = ma.nextFloat(), n3 = ma.nextFloat();
+
+        //Calculo
+        float resultado = (n1 + n2 + n3) / 3;
+
+        //Resultado
+        System.out.println("Média aritmética igual a: %.2f " + resultado);
+    }
+}
+
+##################################################################################################################
+
+//Atividade 3
+
+import java.util.Scanner;
+
+public class Atividade3 {
+    public static void main(String[] args) {
+
+        //Coleta de dados
+        Scanner mp = new Scanner(System.in);
+        System.out.println("Digite 3 notas e seu peso separadas por ENTER para calcular a média ponderada:");
+
+        float n1 = mp.nextFloat(), p1 = mp.nextFloat();
+        float n2 = mp.nextFloat(), p2 = mp.nextFloat();
+        float n3 = mp.nextFloat(), p3 = mp.nextFloat();
+
+        //Calculo
+        float resultado = (n1*p1 + n2*p2 + n3*p3) / (p1 + p2 + p3);
+
+        //Resultado
+        System.out.println("Média aritmética igual a: %.2f " + resultado);
+    }
+}
+
+##################################################################################################################
+
+//Atividade 4
+
+import java.util.Scanner;
+
+public class Atividade4 {
+    public static void main(String[] args) {
+
+        //Coleta de dados
+        Scanner sa = new Scanner(System.in);
+        System.out.println("Digite seu salário:");
+
+        float salario = sa.nextFloat();
+
+        //Calculo
+        float salariofinal = salario * 1.25f;
+
+        //Resultado
+        System.out.println("Salário aumentado em 25%, valor atual: %.2f" + salariofinal);
+    }
+}
+
+##################################################################################################################
+
+//Atividade 5
+
+import java.util.Scanner;
+
+public class Atividade5 {
+    public static void main(String[] args) {
+
+        //Coleta de dados
+        Scanner sp = new Scanner(System.in);
+        System.out.println("Digite seu salário e a taxa de aumento separados por ENTER:");
+
+        float salario = sp.nextFloat();
+        float percentual = sp.nextFloat();
+
+        //Calculo
+        float aumento = salario * (percentual / 100);
+
+        //Resultado + calculo final
+        System.out.println("Aumento de: %.2f " + aumento);
+        System.out.println("Salário final: %.2f " + (salario + aumento));
+    }
+}
+
+##################################################################################################################
+
+//Atividade 6
+
+import java.util.Scanner;
+
+public class Atividade6 {
+    public static void main(String[] args) {
+
+        //Coleta de dados
+        Scanner sa = new Scanner(System.in);
+        System.out.println("Digite seu salário:");
+
+        float salariobase = sa.nextFloat();
+
+        //Calculo
+        float gratificacao = salariobase * 0.05f;
+        float imposto = salariobase * 0.07f;
+        float salariofinal = salariobase + gratificacao - imposto;
+
+        //Resultado
+        System.out.println("Gratificação de: %.2f " + gratificacao);
+        System.out.println("Imposto de: %.2f " + imposto);
+        System.out.println("Salário final de: %.2f " + salariofinal);
+    }
+}
